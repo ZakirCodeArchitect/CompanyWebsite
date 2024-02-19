@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        referrerpolicy="no-referrer" rel="stylesheet" />
+
+    <title>code Architect</title>
+</head>
+
+<body>
+
+    <!--   plx download the images, gifs from Pixcap Website here http://bit.ly/3zJ49Q7 -->
+
+    <nav class="navbar navbar-expand-lg bg-color py-4 pt-lg-5 ">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">Code Architect</a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class=" nav-item">
+                        <a aria-current="page" class="nav-link active" href="#">Home</a>
+                    </li>
+                    <!--  <li class=" nav-item">
+                        <a class=" nav-link" href="#about">About</a>
+                    </li>
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Portfolio/info.html">About</a>
+                    </li>
+
+                    <li class=" nav-item">
+                        <a class=" nav-link" href="#online_services">Services</a>
+                    </li>
+
+                    <a class="nav-link" href="https://www.linkedin.com/in/zakir-matloob-4992b52a7">
+                        Linkedin
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin align-center" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--hero section-->
+
+    <section class="bg-main bg-color hero-section">
+        <div class="container">
+            <div class="row mb-5 ">
+                <div
+                    class="d-flex flex-column align-items-start justify-content-center col-xl-6 xol-lg-6 col-md-12 col-12 order-1 order-lg-0 text-md-start text-center">
+                    <h1 class=" text-capitalize fw-bolder text-white">
+                        We Create High Performance Websites
+                    </h1>
+                    <p class="mt-3 mb-5  para-width text-light-grey ">
+                        Code Architect is a leading provider of bespoke high-end websites. Our expert team specializes
+                        in delivering innovative designs and advanced functionality to create exceptional user
+                        experiences. With a focus on quality and client satisfaction, we tailor each project to exceed
+                        expectations, leaving a lasting impact in the digital landscape.
+                    </p>
+
+                    <div class="text-center w-100 text-md-start">
+                        <a href="https://github.com/ZakirCodeArchitect" class="btn btn-primary px-5 py-2"
+                            data-bs-offset="0,5" data-bs-placement="top" data-bs-title="Get Best Services"
+                            data-bs-toggle="tooltip">
+                            GitHub
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-github ms-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                            </svg>
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div class="col-xl-6 xol-lg-6 col-md-12 col-12 order-0 order-lg-1 hero-image--section ">
+                    <div class="text-md-end text-center mb-5">
+
+                        <video autoplay class="hero-video--section" loop muted src="./images/hero.mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--
+            <div class="custom-shape-divider-bottom-1684208460">
+            <svg data-name="Layer 1" preserveAspectRatio="none" viewBox="0 0 500 120"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="shape-fill"
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                </path>
+            </svg>
+        </div>
+        -->
+    </section>
+
+
+    <!--hero section end -->
+
+    <!--service section-->
+
+    <section class=" services-section">
+        <div class="container text-center common-title fw-bold">
+            <h2 class="common-heading">What We Will Do For <br> Your Website</h2>
+            <hr class="w-25 mx-auto ">
+        </div>
+
+        <div class="container mt-5">
+            <div class="row g-5 ">
+                <div class="col-xxl-4 col-lg-4 col-12 ">
+                    <div class=" card-box rounded-2 p-5 text-center">
+                        <img alt="GIF Image" class="img-fluid" src="./images/link.gif" width="200px">
+
+                        <h5 class="my-3 fw-normal ">Link Building</h5>
+                        <p class="pe-3 mb-5">
+                            We'll employ strategic link-building tactics to enhance your website's authority and
+                            visibility, driving organic traffic and improving search engine rankings.
+                        </p>
+                        <div class="  d-flex justify-content-center align-items-center ">
+                            <a class="icon-span d-flex justify-content-center align-items-center rounded-circle mb-3"
+                                href="/service.html">
+                                <i class="fa-solid fa-arrow-right"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xxl-4 col-lg-4 col-12  ">
+                    <div class=" card-box rounded-2 p-5 text-center shadow">
+                        <img alt="GIF Image" class="img-fluid" src="./images/speaker.gif" width="200px">
+
+                        <h5 class="my-3 fw-normal"> Content marketing </h5>
+                        <p class="pe-3 mb-5">
+                            We'll create and distribute strategic content to elevate your brand's online presence and
+                            engage your target audience effectively.
+                        </p>
+                        <div class="  d-flex justify-content-center align-items-center ">
+                            <a class="icon-span d-flex justify-content-center align-items-center rounded-circle mb-3"
+                                href="/service.html">
+                                <i class="fa-solid fa-arrow-right"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xxl-4 col-lg-4 col-12 ">
+                    <div class=" card-box rounded-2 p-5 text-center">
+                        <img alt="GIF Image" class="img-fluid" src="./images/seo.gif" width="200px">
+                        <h5 class="my-3 fw-normal "> On Page SEO </h5>
+                        <p class="pe-3 mb-5">
+                            We'll optimize your website's on-page elements to improve search engine visibility and
+                            enhance user experience, driving higher rankings and organic traffic.
+                        </p>
+                        <div class="  d-flex justify-content-center align-items-center ">
+                            <a class="icon-span d-flex justify-content-center align-items-center rounded-circle mb-3"
+                                href="/service.html">
+                                <i class="fa-solid fa-arrow-right"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--service section-->
+
+    <section class="more-info-section bg-color">
+
+        <section class="container ">
+            <div class="row">
+                <div class="col-xl-6 xol-lg-6 col-md-12 col-12 img-section">
+                    <figure>
+                        <img alt="mobile chat" class="img-fluid" width="100px" src="./images/Generate Media (HD).png">
+                    </figure>
+                </div>
+
+                <div
+                    class="col-xl-6 xol-lg-6 col-md-12 col-12  d-flex flex-column justify-content-center align-items-start ">
+
+                    <h1 class="common-heading text-capitalize fw-bolder text-white">
+                        Tailer your development<br> skills with us
+                    </h1>
+                    <p class="mt-3 mb-5 para-width text-light-grey">
+                        At Code Architect, we offer cutting-edge web development courses, curated by industry experts,
+                        to equip learners with the latest technologies and skills. Our hands-on approach, real-world
+                        projects, and dedicated mentors ensure students graduate ready to excel in the competitive field
+                        of web development. Join us to unlock your potential and thrive in the dynamic world of digital
+                        innovation.
+                    </p>
+                    <a href="/BootstrapWebsite-master/contact.html">
+                        <button class="btn btn-primary px-5 py-2">For More Details</button>
+                    </a>
+
+
+
+                </div>
+
+
+            </div>
+        </section>
+    </section>
+
+
+
+    <section class="common-section business-section" id="online_services">
+        <div class="container text-center fw-bold common-title">
+            <h2 class="common-heading">Services provided by <br>our Company</h2>
+            <hr class="w-25 mx-auto ">
+        </div>
+
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-xl-6 col-md-12 ">
+                    <div class="d-flex  px-3 py-5 shadow ">
+                        <img alt="GIF Image" class=" d-md-block d-none  img-fluid mx-3"
+                            src="./images/3D Programming Icon On A Window (HD).png" width="150px">
+
+                        <div class="row ">
+                            <p class="mb-3 fw-bolder">Full Stack Development</p>
+                            <p> From concept to deployment, we handle every aspect of web development, ensuring seamless
+                                integration and functionality across the board including both Front-end and Back-end
+                                with hosting also done.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-6 col-md-12 ">
+                    <div class="d-flex  px-3 py-5 shadow ">
+                        <img alt="GIF Image" class=" d-md-block d-none  img-fluid mx-3"
+                            src="./images/Shipping Solutions (HD).png" width="150px">
+
+                        <div class="row ">
+                            <p class="mb-3 fw-bolder">E-commerce Expertise
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-bag-check" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                                </svg>
+                            </p>
+                            <p>Need an online store? We've got you covered. We develop e-commerce platforms with
+                                seamless payment integration and user-friendly interfaces to boost your online sales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-md-12 ">
+                    <div class="d-flex  px-3 py-5 shadow ">
+                        <img alt="GIF Image" class=" d-md-block d-none  img-fluid mx-3" src="./images/Prompt (HD).png"
+                            width="150px">
+
+
+                        <div class="row ">
+                            <p class="mb-3 fw-bolder">API Development and Integration
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-braces" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6" />
+                                </svg>
+                            </p>
+                            <p>Enhance your web applications with custom API development and seamless integration of
+                                third-party APIs for enhanced functionality and data exchange.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-md-12 ">
+                    <div class="d-flex  px-3 py-5 shadow ">
+                        <img alt="GIF Image" class=" d-md-block d-none  img-fluid mx-3"
+                            src="./images/3D Artificial Intelligence Prompt Window (HD).png" width="150px">
+
+                        <div class="row ">
+                            <p class="mb-1 fw-bolder">AI Integration</p>
+                            <p>Harnessing the power of artificial intelligence, we integrate intelligent features such
+                                as chatbots, recommendation engines, and personalization to automate tasks and enhance
+                                user experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--testimonial section -->
+    <section class="common-section mb-5 pt-5 bg-color">
+        <div class="container text-center common-title  ">
+            <h2 class="common-heading text-white">What Client Say<br>About Us</h2>
+            <hr class="w-25 mx-auto">
+        </div>
+
+
+        <div class="container">
+            <div class="carousel slide" data-bs-ride="true" id="carouselExampleIndicators">
+                <div class="carousel-indicators">
+                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                        data-bs-target="#carouselExampleIndicators" type="button"></button>
+                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators"
+                        type="button"></button>
+                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators"
+                        type="button"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-xxl-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card p-3" style="width: 18rem;">
+                                        <div class="text-center mb-3">
+                                            <img alt="GIF Image" class="img-fluid"
+                                                src="./images/Developer Working On Laptop (HD).png" width="450px">
+                                        </div>
+
+                                        <div class="card-body text-center">
+                                            <p class="card-title mb-3">Jessica Pearson</p>
+                                            <p class="card-text">Code Architect's utilization of the latest technologies
+                                                like AWS resulted in a website that not only looks stunning but also
+                                                scales effortlessly to meet our growing business needs.</p>
+                                            <div class="mt-3 d-flex justify-content-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xxl-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="GIF Image" class="img-fluid"
+                                            src="./images/Developer Working On Laptop (HD).png" width="450px">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">Sarah D.</p>
+                                            <p class="card-text">"Code Architect's attention to detail and
+                                                professionalism resulted in a seamless transformation of our online
+                                                presence.</p>
+                                            <div class=" mt-3 d-flex justify-content-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xxl-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="GIF Image" class="img-fluid"
+                                            src="./images/Developer Working On Laptop (HD).png" width="450px">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">John P.</p>
+                                            <p class="card-text">Working with Code Architect was a game-changer; their
+                                                expertise delivered a visually stunning website that boosted our online
+                                                visibility.</p>
+                                            <div class=" mt-3 d-flex justify-content-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-xxl-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="GIF Image" class="img-fluid"
+                                            src="./images/Developer Working On Laptop (HD).png" width="450px">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">Emily</p>
+                                            <p class="card-text">Code Architect exceeded our expectations, delivering a
+                                                user-friendly platform that has attracted new clients.</p>
+                                            <div class=" mt-3 d-flex justify-content-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xxl-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="GIF Image" class="img-fluid"
+                                            src="./images/Developer Working On Laptop (HD).png" width="450px">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">David</p>
+                                            <p class="card-text">Code Architect's commitment to excellence is unmatched;
+                                                they delivered a website that looks fantastic and performs flawlessly.
+                                            </p>
+                                            <div class=" mt-3 d-flex justify-content-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xxl-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="GIF Image" class="img-fluid"
+                                            src="./images/Developer Working On Laptop (HD).png" width="450px">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">Chris</p>
+                                            <p class="card-text">Thanks to Code Architect's expertise in ReactJS, our
+                                                website now offers a dynamic and interactive user experience, driving
+                                                increased engagement and conversions..</p>
+                                            <div class=" mt-3 d-flex justify-content-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-xxl-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="GIF Image" class="img-fluid"
+                                            src="./images/Developer Working On Laptop (HD).png" width="450px">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">Onaiza R.</p>
+                                            <p class="card-text">Code Architect's DevOps implementation streamlined our
+                                                website deployment process, significantly reducing downtime and
+                                                improving overall performance.</p>
+                                            <div class=" mt-3 d-flex justify-content-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xxl-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="GIF Image" class="img-fluid"
+                                            src="./images/Developer Working On Laptop (HD).png" width="450px">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">Monica</p>
+                                            <p class="card-text">Code Architect's MEAN stack expertise delivered a
+                                                website that perfectly integrates our business processes, enhancing
+                                                efficiency and productivity.</p>
+                                            <div class="d-flex justify-content-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xxl-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="card  p-3" style="width: 18rem;">
+                                        <img alt="GIF Image" class="img-fluid"
+                                            src="./images/Developer Working On Laptop (HD).png" width="450px">
+                                        <div class="card-body text-center">
+                                            <p class="card-title  mb-3">Andrew</p>
+                                            <p class="card-text">With Code Architect's AWS expertise, our website now
+                                                boasts lightning-fast speed and unparalleled reliability, providing an
+                                                exceptional user experience for our customers.</p>
+                                            <div class="d-flex justify-content-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
+                    type="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators"
+                    type="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!--testimonail section ends-->
+
+    <!--Pricing section -->
+    <section class="common-section blog-section">
+        <div class="common-heading container text-center common-title  ">
+            <h2 class="common-heading">Tips and Tricks From <br>Our Exparts</h2>
+            <hr class="w-25 mx-auto">
+        </div>
+
+        <div class="container my-5">
+            <div class="row g-5  ">
+                <div class="col-xl-3 col-md-6 col-12 ">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="card" style="width: 18rem;">
+                            <!-- <img alt="..." class="card-img-top" src="./images/1.png"> -->
+                            <div class="container mt-2">
+                                <a> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-journal-code" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708" />
+                                        <path
+                                            d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
+                                        <path
+                                            d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
+                                    </svg></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+
+                                    <p class="small text-grey "><i class="fa-solid fa-book-open-reader"></i> : 9810 </p>
+                                    <p class="small text-grey "> Sep 6, 2023 </p>
+                                </div>
+                                <h5 class="card-title mt-3">Web Development</h5>
+
+                                <p class="card-text mt-2 mb-3">Continuous learning of new technologies and frameworks is
+                                    key to staying ahead in web development.</p>
+                                <a class="px-4 py-2 btn btn-dark" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-12 ">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="card" style="width: 18rem;">
+                            <!-- <img alt="..." class="card-img-top" src="./images/"> -->
+                            <div class="container mt-2">
+                                <a> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-currency-bitcoin" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927z" />
+                                    </svg></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+
+                                    <p class="small text-grey "><i class="fa-solid fa-book-open-reader"></i> : 5130 </p>
+                                    <p class="small text-grey "> Oct 12, 2023 </p>
+                                </div>
+                                <h5 class=" mt-3 card-title">Freelancing</h5>
+                                <p class="card-text mt-2 mb-3">Define your niche, build a strong brand, and prioritize
+                                    exceptional service to succeed as a freelancer.</p>
+                                <a class="px-4 py-2 btn btn-dark" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-12 ">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="card" style="width: 18rem;">
+                            <!-- <img alt="..." class="card-img-top" src="./images/3.png"> -->
+                            <div class="container mt-2">
+                                <a> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-app-indicator" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1z" />
+                                        <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                    </svg></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+
+                                    <p class="small text-grey "><i class="fa-solid fa-book-open-reader"></i> : 2240 </p>
+                                    <p class="small text-grey "> Dec 21, 2023 </p>
+                                </div>
+                                <h5 class=" mt-3 card-title">Graphic Designer</h5>
+                                <p class="card-text mt-2 mb-3">Master design principles, seek feedback, and stay
+                                    inspired to create impactful designs.</p>
+                                <a class="px-4 py-2 btn btn-dark " href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 ">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="card" style="width: 18rem;">
+                            <!-- <img alt="..." class="card-img-top" src="./images/4.png"> -->
+                            <div class="container mt-2">
+                                <a> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-file-word" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4.879 4.515a.5.5 0 0 1 .606.364l1.036 4.144.997-3.655a.5.5 0 0 1 .964 0l.997 3.655 1.036-4.144a.5.5 0 0 1 .97.242l-1.5 6a.5.5 0 0 1-.967.01L8 7.402l-1.018 3.73a.5.5 0 0 1-.967-.01l-1.5-6a.5.5 0 0 1 .364-.606z" />
+                                        <path
+                                            d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1" />
+                                    </svg></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+
+                                    <p class="small text-grey "><i class="fa-solid fa-book-open-reader"></i> : 3500 </p>
+                                    <p class="small text-grey "> Jan 28, 2024 </p>
+                                </div>
+                                <h5 class=" mt-3 card-title">Wordpress Developer</h5>
+                                <p class="card-text mt-2 mb-3">Master WordPress fundamentals, optimize performance,
+                                    prioritize security, and offer value-added services to excel in WordPress
+                                    development.</p>
+                                <a class="px-4 py-2 btn btn-dark" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--    pricing section end -->
+
+
+    <!--contact section-->
+    <section class="common-section bg-color contact-section text-white">
+        <div class="custom-shape-divider-top-1684211116">
+            <svg data-name="Layer 1" preserveAspectRatio="none" viewBox="0 0 1200 120"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="shape-fill"
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="container text-center fw-bold common-title ">
+            <h2 class="common-heading text-white ">Contact Us</h2>
+            <hr class="w-25 mx-auto">
+        </div>
+
+        <div class="container ">
+            <div class="form-section  mx-auto">
+                <form>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label" for="first-name">First name</label>
+                                <input class="form-control" id="first-name" placeholder="First name"
+                                    aria-label="First name" type="text" required>
+                            </div>
+                            <div class="col">
+                                <label for="last-name" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="last-name" placeholder="Last name"
+                                    aria-label="Last name" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" required
+                            placeholder="Enter your email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">What's your concern</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" required
+                            placeholder="Write your concern" rows="3"></textarea>
+                    </div>
+
+                    <button type="button" class="btn btn-primary">Submit</button>
+
+                    <!-- 
+                        <script>
+                        function openMailClient() {
+                            var recipient = "webdeveloper.zakir152@gmail.com";
+                            var firstName = document.getElementById("first-name").value;
+                            var lastName = document.getElementById("last-name").value;
+                            var email = document.getElementById("exampleInputEmail1").value;
+                            var concern = document.getElementById("exampleFormControlTextarea1").value;
+
+                            var subject = encodeURIComponent("Concern from " + firstName + " " + lastName);
+                            var body = encodeURIComponent("Name: " + firstName + " " + lastName + "%0D%0A" + "Email: " + email + "%0D%0A" + "Concern: " + concern);
+
+                            var mailtoLink = "mailto:" + recipient + "?subject=" + subject + "&body=" + body;
+
+                        }
+                        window.location.href = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent?compose=jrjtXSnhNgTXdlMkjcZGxwSDtbcBBvtBrbbpVQPFcWLrdKJJjWzbjlmRznnWpKWnNDDmKdnB";
+
+
+                    </script>
+
+                    -->
+
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--contact section end -->
+
+
+    <!--footer section-->
+
+    <footer class="main-footer-section">
+        <div class="contact-details">
+            <div class="container px-5">
+                <div class="row g-0">
+                    <div class="col-lg-4 ">
+                        <div class="contact-div p-5 d-flex flex-column justify-content-center align-items-center">
+                            <div class="icon-div d-flex justify-content-center align-items-center rounded-circle mb-3">
+                                <img src="./images/HR Talking On Phone (HD).png" alt="GIF Image" class="img-fluid"
+                                    width="500px">
+                                <!--
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                    class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                                -->
+                            </div>
+                            <p class="text-white">+92 333 6706 119</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 ">
+                        <div class="contact-div p-5 d-flex flex-column justify-content-center align-items-center">
+                            <div class="icon-div d-flex justify-content-center align-items-center rounded-circle mb-3">
+                                <!--                            <i class="fa-solid fa-phone"></i>-->
+                                <!-- <img src="./images/email.gif" alt="GIF Image" class="img-fluid"> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                    class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0m-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                            </div>
+                            <p class="text-white">051 2313 570</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 ">
+                        <div class="contact-div p-5 d-flex flex-column justify-content-center align-items-center">
+                            <div class="icon-div d-flex justify-content-center align-items-center rounded-circle mb-3">
+                                <img src="./images/map.gif" alt="GIF Image" class="img-fluid">
+                            </div>
+                            <p class="text-white">DHA 2 , Islamabad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section py-5 text-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-md-12 col-sm-12 col-6">
+                            <div class="footer-links">
+                                <h4 class="text-white mt-5 mb-3">To Stay Connected</h4>
+
+                                <h9 class="subscribeinfo text-white">
+                                    Stay up-to-date with the latest news, updates, and exclusive offers from Code
+                                    Architect. By subscribing to our newsletter, you'll gain access to valuable
+                                    insights, industry trends, and expert tips straight to your inbox. Join our
+                                    growing community of innovators, entrepreneurs, and tech enthusiasts today and
+                                    be the first to know about our newest projects and upcoming events. Don't miss
+                                    out – subscribe now and embark on a journey of digital transformation with Code
+                                    Architect.
+                                </h9>
+
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="col-lg-6 col-md-12 col-12 mt-3">
+                            <div class="footer-links">
+                                <!--<h4 class="mt-5 mb-3 text-white">Subscribe</h4> -->
+                                <div class="input-group mb-3 w-75">
+                                    <input type="text" class="form-control" placeholder="Recipient's username"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <span class="input-group-text btn btn-primary" id="basic-addon2">Subscribe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <hr class="container mx-auto">
+
+                <div class="row">
+                    <div class="col-lg-8 col-12 ">
+                        Copyright ©2023 All rights reserved. | This template is made with by <span class="bg-theme">
+                            webdeveloper.zakir152@gmail.com</span>
+                    </div>
+                    <div class="col-md-4 col-12  ">
+                        <div class="d-flex justify-content-center justify-content-lg-end gap-5 mt-lg-0 mt-3">
+                            <a href="https://www.instagram.com/edges15.pk/" target="_blank">
+                                <div
+                                    class="icon-span d-flex justify-content-center align-items-center rounded-circle mb-3">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/+923336706119">
+                                <div
+                                    class="icon-span d-flex justify-content-center align-items-center rounded-circle mb-3">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                            </a>
+                            <a href="https://github.com/ZakirCodeArchitect">
+                                <div
+                                    class="icon-span d-flex justify-content-center align-items-center rounded-circle mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                    </svg>
+                                </div>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--footer sectoin ends -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
